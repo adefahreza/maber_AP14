@@ -1,5 +1,6 @@
 from utils import header, line, space, text_centered, text_left
-
+import re
+from database.user import create_user, check_user
 
 def login_screen():
     isLoggedIn = False
@@ -24,8 +25,60 @@ def login_screen():
         
     return isLoggedIn
 
+#-----------------------------------------------------------------------------------------------------------
+
+validasi_username = r"^[a-zA-Z0-9._]{5,}$"
+Validasi_password = r"^[a-zA-Z0-9]{5,}$"
+
 def login_user():
-    return True  
+    while True:
+        try:
+            username = input("Masukkan nama pengguna: ")
+            if not re.match(validasi_username, username):
+                raise ValueError("Username hanya boleh berisi huruf, angka, titik, dan garis bawah dengan minimal 5 karakter.")
+            else:
+                break
+        except ValueError as error:
+            print(error)
+            
+    while True:
+        try:
+            password = input("Masukkan password: ")
+            if not re.match(Validasi_password, password):
+                raise ValueError("Password hanya boleh berisi huruf dan angka dengan minimal 5 karakter.")
+            else:
+                break
+        except ValueError as error:
+            print(error)
+
+        check_user(username, password)
+        if check_user(username, password) == True:
+            break
  
 def signup_user():
-    return True   
+
+    while True:
+        try:
+            username = input("Masukkan nama pengguna baru: ")
+            if not re.match(validasi_username, username):
+                raise ValueError("Username hanya boleh berisi huruf, angka, titik, dan garis bawah dengan minimal 5 karakter.")
+            else:
+                break
+
+        except ValueError as error:
+            print(error)
+    
+    while True:
+        try:
+            password = input("Masukkan password: ")
+            if not re.match(Validasi_password, password):
+                raise ValueError("Password hanya boleh berisi huruf dan angka dengan minimal 5 karakter.")
+            else:
+                break
+            
+        except ValueError as error:
+            print(error)
+
+        create_user(username, password)
+        if create_user(username, password) == True:
+            break
