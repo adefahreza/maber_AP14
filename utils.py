@@ -18,6 +18,11 @@ def main_menu():
         if choice == "1":
             from category.menu import chooseCategory
             chooseCategory()
+        elif choice == "2":
+            # Leaderboard
+            from rank.leaderboard import Show_LeaderBoard
+            Show_LeaderBoard()
+
         elif choice == "4":
             goodbye_banner()
             break

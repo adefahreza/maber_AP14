@@ -10,5 +10,23 @@
         "password": "$2b$12$Diy5NR89Y8UHvAeUyuJyi.Id0ygkPhKAIfpGp9vaAqNg1QrrWGV.q",
         "total_level": 0,
         "title": "bronze"
+    },
+    "rezaaa": {
+        "username": "rezaaa",
+        "password": "$2b$12$4bH1.3erjOYmteBFNWb2FuVLA5/k8PikITnjMXVoAplf.V2y453ry",
+        "total_level": 0,
+        "title": "bronze"
+    },
+    "FAAHHH": {
+        "username": "FAAHHH",
+        "password": "$2b$12$pky4Cz3wDaO2JJA17sRVx.eS1VZ1ayzpnOl.Oy/ujqCdhrtBn32tW",
+        "total_level": 15,
+        "title": "silver"
+    },
+    "jackjack": {
+        "username": "jackjack",
+        "password": "$2b$12$L4YNzbxlQulVmPQsUd4pmuVgowz2K0p58beqelmGn92klY70fV0mW",
+        "total_level": 60,
+        "title": "Legendary"
     }
 }
