@@ -32,38 +32,57 @@ def tutorial_hitung_campuran():
 
 def tutorial_tekateki_gambar():
     print("=" * 80)
-    print("   TUTORIAL: Teka Teki Gambar & Pola")
+    print("   TUTORIAL: Teka-Teki Gambar dan Operasi")
     print("=" * 80)
-    print("\nSoal jenis ini meminta Anda menemukan pola atau aturan dari")
-    print("serangkaian angka, gambar, atau operasi.")
+    print("\nJenis soal ini menantang Anda untuk menemukan nilai setiap bentuk")
+    print("berdasarkan pola operasi matematika yang diberikan ( + , - , × , ÷ ).")
+    print("Setiap bentuk (misalnya ◼, ▲, ●, ◆, ○) mewakili nilai angka tertentu.")
     
-    print("\nTips Mencari Pola:")
-    print("1. Lihat Selisihnya")
-    print("   - Apakah selisih antar angka konstan (tetap)?")
-    print("   - Contoh: 2, 5, 8, 11, ... (Polanya selalu ditambah 3)")
+    print("\nCara Mengerjakan:")
+    print("1. Perhatikan Bentuk dan Operasi")
+    print("   - Tiap soal menggunakan simbol-simbol acak seperti ◼, ▲, ●, ◆, ○.")
+    print("   - Setiap simbol punya nilai berbeda.")
+    print("   - Soal ditulis seperti:  ◼ + ▲ = ?  atau  ● × ◼ ÷ ▲ = ?")
 
-    print("\n2. Lihat Rasionya")
-    print("   - Apakah angka berikutnya didapat dari perkalian/pembagian?")
-    print("   - Contoh: 3, 6, 12, 24, ... (Polanya selalu dikali 2)")
+    print("\n2. Gunakan Petunjuk (Hint) untuk Menemukan Nilai Simbol")
+    print("   - Tiap hint menunjukkan hubungan antar bentuk dengan hasil hitungan.")
+    print("   - Contoh hint:  ◼ + ◼ + ◼ = 9  → berarti nilai ◼ = 3.")
+    print("   - Gunakan semua hint yang tersedia untuk menentukan nilai setiap bentuk.")
 
-    print("\n3. Pola Bertingkat")
-    print("   - Kadang, selisihnya juga membentuk pola baru.")
-    print("   - Contoh: 1, 3, 7, 13, 21, ...")
-    print("     - Selisih: +2, +4, +6, +8, ... (Selisihnya punya pola +2)")
+    print("\n3. Substitusi Nilai ke Dalam Soal Utama")
+    print("   - Setelah tahu nilai tiap bentuk, gantikan simbol pada soal.")
+    print("   - Lakukan operasi matematika sesuai urutan (ingat urutan operasi: ×/÷ lebih dulu).")
 
-    print("\n4. Pola Loncat (Fibonacci, dll)")
-    print("   - Angka berikutnya adalah hasil operasi dari dua angka sebelumnya.")
-    print("   - Contoh: 1, 1, 2, 3, 5, 8, ... (Pola Fibonacci, 1+1=2, 1+2=3, dst.)")
-    
-    print("\n--- CONTOH LENGKAP ---")
-    print("Soal: Tentukan angka berikutnya dari 5, 6, 8, 11, ...")
+    print("\n4. Hasilkan Jawaban Akhir")
+    print("   - Hitung hasil akhir setelah semua simbol diganti nilainya.")
+    print("   - Beberapa soal mungkin melibatkan operasi campuran ( + , - , × , ÷ ).")
+
+    print("\n--- CONTOH ---")
+    print("Soal:   ◼ + ▲ = ?")
+    print("Petunjuk:")
+    print("  ◼ + ◼ + ◼ = 9")
+    print("  ▲ + ▲ + ▲ = 6")
     print("Analisis:")
-    print(" - dari 5 ke 6 -> selisih +1")
-    print(" - dari 6 ke 8 -> selisih +2")
-    print(" - dari 8 ke 11 -> selisih +3")
-    print("Pola selisihnya adalah +1, +2, +3. Maka selisih berikutnya adalah +4.")
-    print("Jawaban: 11 + 4 = 15")
-    print("\n========================================")
+    print("  Dari hint pertama → ◼ = 3")
+    print("  Dari hint kedua   → ▲ = 2")
+    print("Substitusi ke soal utama → 3 + 2 = 5")
+    print("Jawaban: 5")
+
+    print("\n--- CATATAN TAMBAHAN ---")
+    print("• Pada level lebih tinggi, operasi bisa lebih rumit (campuran +, -, ×, ÷).")
+    print("• Beberapa hint menunjukkan pola kombinasi, bukan nilai langsung.")
+    print("• Fokuslah pada hubungan antar bentuk, bukan pada angka di hint saja.")
+    print("• Gunakan logika dan perhatikan urutan operasi.")
+
+    print("\nSelamat berpikir dan temukan pola tersembunyi di balik simbol-simbol tersebut!")
+    print("=" * 80)
+    
+    continuePlay = input("Ingin memulai permainan Teka-Teki Gambar? (y): ")
+    if continuePlay.lower() == 'y':
+        return True
+    else:
+        return False
+
 
 def tutorial_barisan_deret():
     print("=" * 80)
@@ -98,8 +117,4 @@ def tutorial_barisan_deret():
     print("\nRumus Jumlah n Suku (Sn) / Deret Geometri:")
     print("   Sn = a * (r^n - 1) / (r - 1)   (jika r > 1)")
     print("   Contoh: Jumlah 5 suku (S5) = 2 * (3^5 - 1) / (3 - 1) = 2 * (243 - 1) / 2 = 242")
-    print("\n========================================")
-    
-tutorial_hitung_campuran()
-tutorial_tekateki_gambar()
-tutorial_barisan_deret()
+    print("\n========================================")-13
