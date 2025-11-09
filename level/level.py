@@ -38,5 +38,6 @@ def progres_level(kategori):
             if repeat == True:
                 current_level = 0
 
+                
                 ard.proses_level(kategori, current_level, current_level)
                 
