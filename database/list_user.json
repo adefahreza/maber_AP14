@@ -10,5 +10,11 @@
         "password": "$2b$12$Diy5NR89Y8UHvAeUyuJyi.Id0ygkPhKAIfpGp9vaAqNg1QrrWGV.q",
         "total_level": 0,
         "title": "bronze"
+    },
+    "aku123": {
+        "username": "aku123",
+        "password": "$2b$12$pVcM32VngXNVbq50SFeNwutMY6SMfKGgXXgb/LN7.yuD7z7ygrZJm",
+        "total_level": 0,
+        "title": "bronze"
     }
 }
