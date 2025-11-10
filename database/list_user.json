@@ -46,17 +46,5 @@
         "current_sequence_level": 0,
         "current_sequence_lives": 0,
         "title": ""
-    },
-    "sintara1": {
-        "username": "sintara1",
-        "password": "$2b$12$foDjmetjzLp2jUGh/oPOTuE.1b9nqQ70zoISBLmlQes4CowVDG75i",
-        "total_level": 1,
-        "current_riddle_level": 0,
-        "current_riddle_lives": 0,
-        "current_arithmetic_level": 0,
-        "current_arithmetic_lives": 0,
-        "current_sequence_level": 0,
-        "current_sequence_lives": 0,
-        "title": ""
     }
 }
