@@ -30,6 +30,6 @@ def Show_LeaderBoard():
         level = user.get("total_level", 0)
         title = user.get("title", "-")
         
-        text_centered(f"#{index:<3} | {username:<15} | Total Level: {level:<5} | Title: {title}")
+        print(f"#{index:<3} | {username:<15} | Total Level: {level:<5} | Title: {title}")
     
     print("-" * 80)

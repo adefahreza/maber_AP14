@@ -10,5 +10,29 @@
         "current_sequence_level": 20,
         "current_sequence_lives": 5,
         "title": "\u001b[96mDiamond\u001b[0m"
+    },
+    "admin2": {
+        "username": "admin2",
+        "password": "$2b$12$em8vHULLrzvrI74whArKOuDF/DLy/3hSLRCUYbZptAuCzLDNSuo6W",
+        "total_level": 7,
+        "current_riddle_level": 0,
+        "current_riddle_lives": 0,
+        "current_arithmetic_level": 7,
+        "current_arithmetic_lives": 5,
+        "current_sequence_level": 0,
+        "current_sequence_lives": 0,
+        "title": "Belum memiliki tingkatan"
+    },
+    "admin3": {
+        "username": "admin3",
+        "password": "$2b$12$IXg1LnKyB1QYhJmBTznLgeyZC6tVTK3LcbJlW85Jody/N3NLXJS4C",
+        "total_level": 21,
+        "current_riddle_level": 1,
+        "current_riddle_lives": 5,
+        "current_arithmetic_level": 20,
+        "current_arithmetic_lives": 5,
+        "current_sequence_level": 0,
+        "current_sequence_lives": 5,
+        "title": "\u001b[37mSilver\u001b[0m"
     }
 }

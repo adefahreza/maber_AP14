@@ -41,7 +41,7 @@ def create_user(username, password):
             "current_arithmetic_lives": 0,
             "current_sequence_level": 0,
             "current_sequence_lives": 0  ,
-            "title": ""
+            "title": "Belum memiliki tingkatan"
         }
         with open(JSON_PATH, "w") as json_file:
             json.dump(data, json_file, indent=4)

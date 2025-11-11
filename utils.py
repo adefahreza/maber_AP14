@@ -13,7 +13,7 @@ def main_menu():
         text_left("3. Ganti Akun 🔄️")
         text_left("4. Keluar Aplikasi 🚪")
         space()
-        choice = input("Pilih opsi (1-3): ")
+        choice = input("Pilih opsi (1-4): ")
         line()
         if choice == "1":
             from play.menu import chooseCategory
