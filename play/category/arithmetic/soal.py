@@ -1,6 +1,7 @@
 import random
 from fractions import Fraction
 
+
 ## Salwa
 def soal_1():
     a = random.randint(1, 100)
@@ -44,10 +45,10 @@ def soal_5():
     d = random.randint(1, 10)
 
     soal = f"({a} - {b}) x ({c} + {d}) = ..."
-    jawaban = int((a - b) * (c + d))
+    answer = int((a - b) * (c + d))
 
     print (soal)
-    return jawaban
+    return answer
 
 def soal_6():
     #pola soal : (a + b) x c(d + e)
@@ -59,10 +60,10 @@ def soal_6():
     e = random.randint(1, 10)
     
     soal = f"({a} + {b}) x {c}({d} + {e}) = ..."
-    jawaban = (a + b) * c * (d + e)
+    answer = (a + b) * c * (d + e)
 
     print (soal)
-    return jawaban
+    return answer
 
 def soal_7():
     #pola soal : x^2 - y^2
@@ -72,10 +73,10 @@ def soal_7():
     y = random.randint(1, x - 1) 
     
     soal = f"Jika x={x} dan y={y}, nilai dari (x² - y²) adalah ..."
-    jawaban = (x**2) - (y**2)
+    answer = (x**2) - (y**2)
 
     print (soal)
-    return jawaban
+    return answer
 
 def soal_8():
     #pola soal : a / b * c
@@ -84,10 +85,10 @@ def soal_8():
     c = random.randint(1, 10)
 
     soal = f"{a} / {b} * {c} = ..."
-    jawaban = (a / b) * c
+    answer = (a / b) * c
 
     print (soal)
-    return jawaban
+    return answer
 
 ## Aqila
 def soal_9():
@@ -180,7 +181,7 @@ def soal_16():
     return answer
 
 ## Rendy
-def level_17():
+def soal_17():
     total_mhs = random.randint(10, 25) * 6
     ikut_esport = total_mhs // 2
     ikut_psm = total_mhs // 3
@@ -192,7 +193,7 @@ def level_17():
           f"    Berapa total mahasiswa yang ikut paling sedikit salah satu UKM?")
     return answer
 
-def level_18():
+def soal_18():
     harga_buku_asli = random.randint(3, 8) * 1000
     harga_pensil_asli = random.randint(2, 6) * 500
     jml_buku = random.randint(2, 5)
@@ -207,7 +208,7 @@ def level_18():
           f"    Jika harga sebuah buku tulis Rp{buku_str}, berapakah harga satu pensil?")
     return answer
 
-def level_19():
+def soal_19():
     x = random.randint(3, 9)
     a = random.randint(2, 4)
     b = random.randint(1, 9)
@@ -222,7 +223,7 @@ def level_19():
     print(f"19. Jika x={x} dan y={a}x {op_str} {b}, hitung nilai dari (x+y) * (x-y).")
     return answer
 
-def level_20():
+def soal_20():
     wa = random.choice([8, 12, 24])
     wb = random.choice([6, 8, 12])
     w_buka = random.randint(2, 4)
@@ -235,3 +236,30 @@ def level_20():
     print(f"20. Tangki air terisi penuh dalam {wa} jam oleh kran A, dan {wb} jam oleh kran B.\n"
           f"    Jika dibuka bersama selama {w_buka} jam, berapa bagian tangki yang terisi?")
     return answer
+
+soal_dict = {
+    1: soal_1,
+    2: soal_2,
+    3: soal_3,
+    4: soal_4,
+    5: soal_5,
+    6: soal_6,
+    7: soal_7,
+    8: soal_8,
+    9: soal_9,
+    10: soal_10,
+    11: soal_11,
+    12: soal_12,
+    13: soal_13,
+    14: soal_14,
+    15: soal_15,
+    16: soal_16,
+    17: soal_17,
+    18: soal_18,
+    19: soal_19,
+    20: soal_20
+}
+
+def show_question(level):
+    print(f"Level: {level}")
+    return soal_dict[level]()

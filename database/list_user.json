@@ -1,50 +1,14 @@
 {
-    "Adeeeee": {
-        "username": "Adeeeee",
-        "password": "$2b$12$dAiKT8S8YA37skdvjKRotOgZqryIYuWAzNPpZfWTg2lmkk011byF6",
-        "total_level": 0,
-        "title": "bronze"
-    },
-    "sayaaaa": {
-        "username": "sayaaaa",
-        "password": "$2b$12$Diy5NR89Y8UHvAeUyuJyi.Id0ygkPhKAIfpGp9vaAqNg1QrrWGV.q",
-        "total_level": 0,
-        "title": "bronze"
-    },
-    "rezaaa": {
-        "username": "rezaaa",
-        "password": "$2b$12$4bH1.3erjOYmteBFNWb2FuVLA5/k8PikITnjMXVoAplf.V2y453ry",
-        "total_level": 0,
-        "title": "bronze"
-    },
-    "FAAHHH": {
-        "username": "FAAHHH",
-        "password": "$2b$12$pky4Cz3wDaO2JJA17sRVx.eS1VZ1ayzpnOl.Oy/ujqCdhrtBn32tW",
-        "total_level": 15,
-        "title": "silver"
-    },
-    "jackjack": {
-        "username": "jackjack",
-        "password": "$2b$12$L4YNzbxlQulVmPQsUd4pmuVgowz2K0p58beqelmGn92klY70fV0mW",
-        "total_level": 60,
-        "title": "Legendary"
-    },
-    "aku123": {
-        "username": "aku123",
-        "password": "$2b$12$pVcM32VngXNVbq50SFeNwutMY6SMfKGgXXgb/LN7.yuD7z7ygrZJm",
-        "total_level": 0,
-        "title": "bronze"
-    },
     "hambaallah": {
         "username": "hambaallah",
         "password": "$2b$12$6oHpF7dovQRV6IrmU.03BOb9V8yLGKIsSBgkh3rlKBRA1RGgv9YaC",
-        "total_level": 0,
-        "current_riddle_level": 0,
-        "current_riddle_lives": 0,
-        "current_arithmetic_level": 0,
-        "current_arithmetic_lives": 0,
+        "total_level": 13,
+        "current_riddle_level": 7,
+        "current_riddle_lives": 5,
+        "current_arithmetic_level": 6,
+        "current_arithmetic_lives": 5,
         "current_sequence_level": 0,
         "current_sequence_lives": 0,
-        "title": ""
+        "title": "Tingkat 1 = Bronze"
     }
 }

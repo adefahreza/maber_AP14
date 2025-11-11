@@ -1,5 +1,6 @@
 from login.login import login_screen
-from utils import banner, main_menu
+from ui_utils import banner
+from utils import main_menu
 
 
 def main():

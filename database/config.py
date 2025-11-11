@@ -1,9 +1,1 @@
 player_name = ""
-total_level = 0
-player_lives = 0
-current_riddle_level = 0
-current_riddle_lives = 0
-current_arithmetic_level = 0
-current_arithmetic_lives = 0
-current_sequence_level = 0
-current_sequence_lives = 0

@@ -1,7 +1,6 @@
-from pyfiglet import Figlet
-
 from database.user import logout
-from ui_utils import line, space, text_left
+from login import login
+from ui_utils import error, goodbye_banner, info, line, space, text_left
 
 
 def main_menu():
@@ -25,18 +24,14 @@ def main_menu():
             Show_LeaderBoard()
         elif choice == "3":
             logout()
-            # Leaderboard
+            while True:
+                result = login.login_user()
+                if result == True:
+                    info("Akun telah berhasil diganti")
+                    break
+                else:
+                    continue
         elif choice == "4":
             goodbye_banner()
             break
             
-
-def banner():
-    banner = Figlet(font='slant', width=80, justify='center')
-    print(banner.renderText("WELCOME TO MABER"))
-    line()
-
-def goodbye_banner():
-    banner = Figlet(font='slant', width=80, justify='center')
-    print(banner.renderText(f"SEE YOU AGAIN! \n"))
-    line()

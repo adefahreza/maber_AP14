@@ -1,3 +1,5 @@
+from pyfiglet import Figlet
+
 WIDTH = 80
 
 def line():
@@ -44,3 +46,13 @@ EMOJI = {
 
 def emoji(name):
     return EMOJI.get(name, "")
+
+def banner():
+    banner = Figlet(font='slant', width=80, justify='center')
+    print(banner.renderText("WELCOME TO MABER"))
+    line()
+
+def goodbye_banner():
+    banner = Figlet(font='slant', width=80, justify='center')
+    print(banner.renderText(f"SEE YOU AGAIN! \n"))
+    line()

@@ -1,5 +1,6 @@
-from database.user import update_user
 from database.config import player_name
+from database.user import get_user, update_user
+
 
 def cek_tingkat(total_level):
     if 10 <= total_level < 20:
@@ -17,19 +18,16 @@ def cek_tingkat(total_level):
     else:
         tingkat = "Belum memiliki tingkatan"
     
-    
     return tingkat
 
-def proses_level(kategori, level_dikerjakan, total_level):
-    print(f"Kategori: {kategori}, Level ke-{level_dikerjakan} selesai.")
-    print(f"Total level yang sudah dikerjakan: {total_level}")
-    
+def proses_level(kategori, nyawa, level_dikerjakan):
+    user_data = get_user(player_name)
+    total_level = user_data[0]
     tingkat = cek_tingkat(total_level)
-    update_user(player_name, level=total_level, title=tingkat)
+    update_user(kategori, nyawa, level_dikerjakan, tingkat)
     
-    if total_level % 10 == 0:
+    print(f"Kategori: {kategori}, Level ke-{level_dikerjakan} selesai.")
+    print(f"Total level yang sudah dikerjakan dari semua kategori soal: {total_level}")
+    
+    if total_level % 10 == 0 and total_level != 0:
         print(f"🎉 Selamat! Anda naik ke {tingkat}")
-    elif 0 <= total_level >= 9:
-        print(f"Anda belum memiliki tingkatan")
-    else:
-        print(f"Anda berada di tingkat {tingkat}.")
