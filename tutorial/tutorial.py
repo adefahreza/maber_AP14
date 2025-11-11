@@ -51,6 +51,12 @@ def arithmetic_tutorial():
     typeplay("   Terjemahan: 2 x P = 6000. Berarti 1 pulpen (P) = 3000.\n\n")
     input("[Tekan Enter untuk bersiap...]")
 
+    typeplay("\n=== CATATAN TAMBAHAN ===\n")
+    typeplay("Jika diberikan soal pembagian kemudian hasilnya itu desimal, maka penulisannya dengan titik\n")
+    typeplay("Contohnya:\n")
+    typeplay("1.33\n")
+    input("[Tekan Enter untuk bersiap...]")
+
     print("\n==========================================")
     typeplay("           TUTORIAL SELESAI\n")
     print("==========================================\n")

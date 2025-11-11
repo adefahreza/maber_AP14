@@ -103,6 +103,7 @@ def soal_9():
     
     print(f"Selesaikan soal berikut: ({a}+{b})/({c}-{d})")
     answer = (a + b) / (c - d)
+    answer = int(answer * 100)/100
     return answer
 
 def soal_10():
