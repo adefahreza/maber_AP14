@@ -24,8 +24,8 @@ def chooseCategory():
             info("Kamu memilih kategori Aritmatika Dasar.")
             from level import level
             if current_arithmetic_level == 0:
-                # from tutorial.tutorial import arithmetic_tutorial
-                # if arithmetic_tutorial():
+                from tutorial.tutorial import arithmetic_tutorial
+                if arithmetic_tutorial():
                     level.progres_level("Aritmatika Dasar")
             else:
                 level.progres_level("Aritmatika Dasar")
@@ -35,8 +35,8 @@ def chooseCategory():
             info("Kamu memilih kategori Teka Teki Gambar.")
             from level import level
             if current_riddle_level == 0:
-                # from tutorial.tutorial import riddle_tutorial
-                # if riddle_tutorial():
+                from tutorial.tutorial import riddle_tutorial
+                if riddle_tutorial():
                 level.progres_level("Teka Teki Gambar")
             else:
                 level.progres_level("Teka Teki Gambar")
